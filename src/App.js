@@ -1,11 +1,10 @@
 import {useState} from 'react';
-import axios from 'axios';
 
 function App() {
 
   const [location,setlocation] = useState('');
   const [data,setdata] = useState({});
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=bf3c1dd500d190c7c669e9eac528ba37&units=metric`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.REACT_APP_SECRET_KEY}&units=metric`
 
 
 
@@ -29,7 +28,6 @@ function App() {
       setlocation('');
     }
   }
-
 
 
 

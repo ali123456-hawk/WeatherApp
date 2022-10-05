@@ -63,7 +63,7 @@ color: white;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   padding: 2rem;
-
+ 
   
 }
 
@@ -82,7 +82,7 @@ color: white;
         text-align:center;
       }
       .bottom{
-        margin: 30rem auto;
+        margin: 340px auto ;
       }
 
 }
